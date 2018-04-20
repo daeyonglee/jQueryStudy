@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="js/jquery-3.3.1.js" type="text/javascript"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		var objects = jQuery('div');
+		
+		objects.click(function(e){
+			jQuery(this).hide();
+		});
+	});
+
+  /* window.onload = function(){
+  	var divs = document.getElementsByTagName('div');
+  	
+  	for (var i in divs){
+    	divs[i].onclick = function(){
+    		this.setAttribute('style', 'display: none');
+    	}
+  	}
+  } */
+</script>
+</head>
+<body>
+<!-- 고민하는 시간이래.. -->
+<!-- 심플한 예제래.. -->
+<h2>날리고 싶은 야구팀</h2>
+<div>삼성 타이거즈</div>
+<div>두산 베어스</div>
+<div>한화 이글스</div>
+</body>
+</html>
