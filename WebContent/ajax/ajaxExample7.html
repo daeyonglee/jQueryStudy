@@ -27,14 +27,12 @@
 			// object -> query string
 			var params = $.param(data);
 
-			//alert(params);
+			alert(params);
 
 			$("#message").load("welcome2.jsp", params);
 
-			
 			// serialize()
-			//params = $(this).serialize();
-			
+			// params = $(this).serialize();
 			return false;
 		});
 	});

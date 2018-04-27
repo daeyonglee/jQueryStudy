@@ -14,7 +14,7 @@
     	    formData.append("test2", $("textarea").val());
     	    formData.append("solo_file", $("#soloFile")[0].files[0]);	//파일 한개
     	    //file multiple 전송시 다음과 같이 반복문으로 추가.     //파일 여러개
-			$($("#multiFile")[0].files).each(function(index, file) {
+					$($("#multiFile")[0].files).each(function(index, file) {
     			formData.append("multi_file[]", file);				
     	    });
     	    */
@@ -36,16 +36,16 @@
         	alert(formData + "생성 완료..");
         	
         	$.ajax({
-				url: 'test.jsp',
-				type: "post",
-				processData: false,
-				contentType: false,
-				data: formData
-
-			}).done(function(data) {
-				alert(data);
-
-			});
+    				url: 'test.jsp',
+    				type: "post",
+    				processData: false, // 파싱하지 말라
+    				contentType: false,
+    				data: formData
+    
+    			}).done(function(data) {
+    				alert(data);
+    
+    			});
     	}
     	
     	fileUpload();
